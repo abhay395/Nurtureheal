@@ -8,6 +8,7 @@ import Signup from './pages/Signup'
 import Profile from './pages/Profile'
 import PageNotFound from './pages/PageNotFound'
 import ProtectedRoute from './componente/ProtectedRoute'
+import HealthAnalysis from './pages/HealthAnalysis'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<Signup />} />
+        <Route path="health-analysis" element={<HealthAnalysis />} />
         <Route path="profile" element={<ProtectedRoute allowedRole={['user', 'admin', 'superadmin']} ><Profile /></ProtectedRoute>} />
       </Route>
       <Route path="*" element={<PageNotFound />} />

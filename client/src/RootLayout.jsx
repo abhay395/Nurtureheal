@@ -9,11 +9,9 @@ export default function RootLayout() {
     return (
         <div>
             <ScrollToTop />
-            <Navbar />
-            <div className=''>
+            <div className='pt-20'>
                 <Outlet />
             </div>
-            <Footer />
              <Toaster />
         </div>
     )
